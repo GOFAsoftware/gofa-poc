@@ -177,24 +177,12 @@ export default function Home() {
                 GOFA Biz Solution combines rapid assessment journeys, member engagement experiences, and operational visibility in one client-brandable platform. It is built for organizations that need to identify risk earlier, explain value more clearly, and coordinate follow-up without fragmented workflows.
               </p>
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-10">
                 <Link
-                  href="/connect/health-risk-factor-assessments"
+                  href="/health-index/1care"
                   className="inline-flex h-14 items-center justify-center rounded-full bg-[var(--color-accent-strong)] px-7 text-sm font-bold uppercase tracking-[0.18em] text-white transition-transform duration-200 hover:-translate-y-0.5"
                 >
-                  View screening demo
-                </Link>
-                <Link
-                  href="/onboarding"
-                  className="inline-flex h-14 items-center justify-center rounded-full border border-[var(--color-line-strong)] bg-[rgba(255,250,243,0.78)] px-7 text-sm font-bold uppercase tracking-[0.18em] text-[var(--color-foreground)] transition-colors hover:bg-white"
-                >
-                  Explore onboarding flow
-                </Link>
-                <Link
-                  href="/insights"
-                  className="inline-flex h-14 items-center justify-center rounded-full border border-[var(--color-line-strong)] bg-white px-7 text-sm font-bold uppercase tracking-[0.18em] text-[var(--color-foreground)] transition-colors hover:bg-[rgba(255,250,243,0.78)]"
-                >
-                  Open insights hub
+                  Start health assessment
                 </Link>
               </div>
 
