@@ -1,5 +1,10 @@
+import { Suspense } from "react";
 import HealthRiskAssessmentClient from "../onboarding/HealthRiskAssessmentClient";
 
 export default function ConnectPage() {
-  return <HealthRiskAssessmentClient />;
+  return (
+    <Suspense>
+      <HealthRiskAssessmentClient />
+    </Suspense>
+  );
 }
