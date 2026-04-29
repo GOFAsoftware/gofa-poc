@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4efe7;
+  --foreground: #172121;
+  --surface: rgba(255, 250, 243, 0.78);
+  --surface-strong: #fffaf1;
+  --line: rgba(23, 33, 33, 0.12);
+  --line-strong: rgba(23, 33, 33, 0.2);
+  --accent: #0f766e;
+  --accent-strong: #0a4c47;
+  --accent-soft: #cde9df;
+  --highlight: #c67d4e;
+  --highlight-soft: #f5ddcb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-highlight: var(--highlight);
+  --color-highlight-soft: var(--highlight-soft);
+  --font-sans: var(--font-manrope), var(--font-noto-sans-tc);
+  --font-display: var(--font-fraunces), var(--font-noto-sans-tc);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top left, rgba(198, 125, 78, 0.16), transparent 30%),
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.18), transparent 36%),
+    linear-gradient(180deg, #fcf8f2 0%, #f4efe7 52%, #efe5d8 100%);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), var(--font-noto-sans-tc), sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(15, 118, 110, 0.2);
+}
+
+.font-display {
+  font-family: var(--font-fraunces), var(--font-noto-sans-tc), serif;
+}
+
+.page-grid {
+  background-image:
+    linear-gradient(to right, rgba(23, 33, 33, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 33, 33, 0.05) 1px, transparent 1px);
+  background-position: center;
+  background-size: 48px 48px;
+}
+
+.soft-panel {
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.88), rgba(255, 250, 243, 0.72));
+  backdrop-filter: blur(14px);
+}
+
+.section-divider {
+  background: linear-gradient(90deg, transparent, rgba(23, 33, 33, 0.18), transparent);
+}

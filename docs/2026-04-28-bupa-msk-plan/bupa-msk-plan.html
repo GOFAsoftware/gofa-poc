@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bupa MSK Plan</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bupa MSK Plan</h1>
+</header>
+<h1 id="blua-msk-health-programme-end-to-end-digital-journey">Blua MSK
+Health Programme — End-to-End Digital Journey</h1>
+<h2 id="implementation-plan-gofa-bupa">Implementation Plan (GOFA ×
+Bupa)</h2>
+<p><strong>Date:</strong> 28 April 2026</p>
+<hr />
+<h2 id="what-gofa-already-has">What GOFA Already Has ✅</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Detail</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI MSK Assessment</td>
+<td>Shoulder, low-back, knee — pose detection + surveys + risk
+scoring</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>Risk Level Engine</td>
+<td>LOW / MODERATE / HIGH / VERY_HIGH per body part</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>Pain Review (in-assessment)</td>
+<td>Sliding-bar pain questionnaire post-movement</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>PDF Report Export</td>
+<td><code>/msk/assessment/[id]/export-pdf</code> with locale
+support</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>AI Training Model</td>
+<td><code>mskAssessment</code> as input in <code>ai-training.ts</code>
+risk tier pipeline</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>AI-Guided Exercise Delivery</td>
+<td>AI Move, lesson plans, warmup/main/cooldown blocks</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>Progress Tracking</td>
+<td><code>PlanPlay</code>, <code>formScore</code>,
+<code>poseAccuracy</code>, compliance % in Firestore</td>
+<td>✅ Live</td>
+</tr>
+<tr>
+<td>Multi-Tenant Infrastructure</td>
+<td><code>bupa.gofa.app</code> subdomain, <code>customToken</code> auth,
+<code>mskSettings</code> on Client doc</td>
+<td>✅ Live</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="gaps-vs.-diagram-summary">Gaps vs. Diagram — Summary</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Diagram Stage</th>
+<th>Gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stage 2 – Triage</td>
+<td>No dedicated triage screen routing users to 3 pathways</td>
+</tr>
+<tr>
+<td>Stage 2 – Booking</td>
+<td>No Bupa clinic booking CTA/integration</td>
+</tr>
+<tr>
+<td>Stage 4 – Recurring check-in</td>
+<td>No standalone weekly pain check-in (only in-assessment today)</td>
+</tr>
+<tr>
+<td>Stage 4 – Weekly review</td>
+<td>No weekly progress review screen</td>
+</tr>
+<tr>
+<td>Stage 4 – Progress dashboard</td>
+<td>No MSK-specific before/after trend chart</td>
+</tr>
+<tr>
+<td>Stage 5 – Outcome report</td>
+<td>No 3-month before/after outcome report</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="implementation-phases">Implementation Phases</h2>
+<h3 id="phase-1-bupa-tenant-setup">Phase 1 — Bupa Tenant Setup</h3>
+<p><strong>Owner:</strong> GOFA | <strong>Effort:</strong> 1–2 days</p>
+<ol type="1">
+<li>Configure <code>bupa</code> Client doc in Firestore: enable
+<code>mskSettings</code>, set <code>primaryColor</code> (Bupa blue),
+define <code>programmeDurationWeeks: 12</code></li>
+<li>Verify <code>bupa.gofa.app</code> subdomain routing, branding, and
+MSK home page renders correctly</li>
+</ol>
+<hr />
+<h3 id="phase-2-triage-screen">Phase 2 — Triage Screen</h3>
+<p><strong>Owner:</strong> GOFA | <strong>Effort:</strong> 3–5 days</p>
+<ol start="3" type="1">
+<li>Build post-assessment <strong>Triage Result Page</strong> at
+<code>/msk/assessment/[id]/triage</code> mapping
+<code>MskRiskLevel</code> to 3 pathways:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Risk Level</th>
+<th>Action</th>
+<th>Next Step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low</td>
+<td>“Start GOFA Rehab Programme”</td>
+<td>Auto-assign MSK lesson plan</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>Rehab Programme + “Book Check-in”</td>
+<td>Bupa booking URL (deep-link)</td>
+</tr>
+<tr>
+<td>High / Very High</td>
+<td>“Recommend Clinic / Physio / Doctor”</td>
+<td>Bupa booking URL (deep-link)</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li>Add <code>triageAction</code> field to
+<code>MSKAssessmentResult</code> model to record which pathway was
+taken</li>
+<li>Track triage funnel in Firebase Analytics</li>
+</ol>
+<hr />
+<h3 id="phase-3-msk-rehab-programme-12-week-journey">Phase 3 — MSK Rehab
+Programme (12-Week Journey)</h3>
+<p><strong>Owner:</strong> GOFA | <strong>Effort:</strong> 1–2 weeks</p>
+<ol start="6" type="1">
+<li>Create <strong>12-week MSK lesson plan templates</strong> in
+Firestore (per body part × risk tier — Low, Medium, High — with
+warmup/rehab/cooldown blocks), reusing existing exercise content</li>
+<li>Auto-create <code>PlanPlay</code> linked to
+<code>mskAssessmentResultId</code> when user accepts the “Start Rehab”
+CTA</li>
+<li>Build <strong>standalone weekly pain/discomfort check-in</strong> —
+lightweight slider (0–10 NRS scale), stored as a timestamped
+subcollection on <code>MSKAssessmentResult</code></li>
+<li>Build <strong>weekly review screen</strong> — shows sessions
+completed, pain trend chart, and surfaces “You’re on track / Seek help”
+prompt if pain increases ≥2 points</li>
+</ol>
+<hr />
+<h3 id="phase-4-progress-dashboard">Phase 4 — Progress Dashboard</h3>
+<p><strong>Owner:</strong> GOFA | <strong>Effort:</strong> 1 week</p>
+<ol start="10" type="1">
+<li>Build <strong>MSK Rehab Dashboard</strong> page
+(<code>/msk/rehab/dashboard</code>):
+<ul>
+<li>Exercise compliance % (from <code>PlanPlay</code>)</li>
+<li>Movement quality trend (from <code>formScore</code> /
+<code>poseAccuracy</code>)</li>
+<li>Weekly pain score chart (from check-in subcollection)</li>
+<li>Mobility improvement indicator</li>
+</ul></li>
+<li>Add in-app/push notification hooks for weekly review reminder at Day
+7 cadence</li>
+</ol>
+<hr />
+<h3 id="phase-5-3-month-outcome-report">Phase 5 — 3-Month Outcome
+Report</h3>
+<p><strong>Owner:</strong> GOFA | <strong>Effort:</strong> 3–5 days</p>
+<ol start="12" type="1">
+<li>Build <strong>Outcome Report</strong>
+(<code>/msk/outcome-report/[id]</code>):
+<ul>
+<li>Before/After table: MSK score, pain score (NRS), mobility score,
+compliance %</li>
+<li>Recommendation section (“Continue Rehab / Book Follow-up / Explore
+Other Programmes”)</li>
+<li>Export as PDF (reuse existing Puppeteer-based export pipeline)</li>
+</ul></li>
+<li>Surface <strong>Re-assessment CTA</strong> at Week 12 to collect
+“After” data and close the feedback loop</li>
+</ol>
+<hr />
+<h2 id="what-bupa-must-provide">What Bupa Must Provide</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Item</th>
+<th>Urgency</th>
+<th>Why Needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Clinic/physio booking URL or API</strong></td>
+<td>High</td>
+<td>Triage CTA for Medium/High risk users — “Book Appointment”</td>
+</tr>
+<tr>
+<td><strong>Member enrollment flow</strong></td>
+<td>High</td>
+<td>How Bupa pushes members into the MSK journey (GOFA
+<code>customToken</code> auth already works)</td>
+</tr>
+<tr>
+<td><strong>Programme definition sign-off</strong></td>
+<td>High</td>
+<td>Confirm 12-week duration, weekly check-in cadence, pain escalation
+thresholds</td>
+</tr>
+<tr>
+<td><strong>Branding assets</strong></td>
+<td>Medium</td>
+<td>Logo + Bupa blue hex code (for <code>primaryColor</code> on Client
+doc)</td>
+</tr>
+<tr>
+<td><strong>Clinical back-channel (optional)</strong></td>
+<td>Low</td>
+<td>If doctor prescription should auto-assign a specific rehab plan →
+Bupa webhook to GOFA API</td>
+</tr>
+<tr>
+<td><strong>FCM/notification consent (optional)</strong></td>
+<td>Low</td>
+<td>Needed only if delivering push notifications via a native Flutter
+wrapper</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Stage 3 (Clinic / Doctor workflow) is entirely
+Bupa’s system. GOFA’s role is limited to generating the PDF report for
+the doctor and providing the booking CTA.</p>
+</blockquote>
+<hr />
+<h2 id="key-files-gofa-web-nextjs">Key Files (gofa-web-nextjs)</h2>
+<p><strong>Modify:</strong> -
+<code>src/app/(main)/msk/home/page.tsx</code> — reads
+<code>mskSettings</code>, entry point -
+<code>src/models/msk-assessment-result.ts</code> — add
+<code>triageAction</code> field -
+<code>src/components/msk/assessment-report/types.ts</code> — risk level
+types (reuse in triage)</p>
+<p><strong>Create (new routes):</strong> -
+<code>src/app/(main)/msk/assessment/[id]/triage/page.tsx</code> -
+<code>src/app/(main)/msk/rehab/dashboard/page.tsx</code> -
+<code>src/app/(main)/msk/rehab/check-in/page.tsx</code> -
+<code>src/app/(main)/msk/outcome-report/[id]/page.tsx</code></p>
+<hr />
+<h2 id="indicative-timeline">Indicative Timeline</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Week</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Week 1</td>
+<td>Tenant setup + Triage screen (Phases 1–2)</td>
+</tr>
+<tr>
+<td>Week 2–3</td>
+<td>12-week lesson plans + auto-assignment + check-in (Phase 3)</td>
+</tr>
+<tr>
+<td>Week 4</td>
+<td>Progress dashboard (Phase 4)</td>
+</tr>
+<tr>
+<td>Week 5</td>
+<td>Outcome report + re-assessment CTA (Phase 5)</td>
+</tr>
+<tr>
+<td>Week 6</td>
+<td>UAT with Bupa, polish, go-live</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Prepared by GOFA — 28 April 2026</em></p>
+</body>
+</html>
