@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist_Mono, Manrope, Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
 
@@ -29,7 +29,12 @@ export const metadata: Metadata = {
   title: "GOFA Biz Solution | Preventive Health Engagement for Insurers and Care Providers",
   description:
     "GOFA Biz Solution helps insurers, healthcare groups, and care operators screen risk early, engage members continuously, and coordinate follow-up from one digital health platform.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({
